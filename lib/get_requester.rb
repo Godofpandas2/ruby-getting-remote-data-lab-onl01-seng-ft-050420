@@ -1,3 +1,4 @@
+
 require 'open-uri'
 require 'net/http'
 require 'json'
@@ -14,13 +15,10 @@ attr_accessor :url
     uri = URI.parse(self.url)
     response = Net::HTTP.get_response(uri)
     response.body
-
-
-  end
+ end
 
   def parse_json
     requester = JSON.parse(get_response_body)
 
-
-programs = GetPrograms.new
-puts programs.program_school.uniq
+  end
+end
