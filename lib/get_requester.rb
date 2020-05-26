@@ -24,3 +24,5 @@ end
 
 #programs = GetPrograms.new.get_programs
 #puts programs
+programs = GetPrograms.new
+puts programs.program_school.uniq
